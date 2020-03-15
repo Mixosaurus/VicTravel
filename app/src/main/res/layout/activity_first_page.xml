@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.vic.travel.firstpage.FirstPageActivity">
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="290dp"
+        android:layout_height="@dimen/height_button"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_rounded_rectangle"
+        android:text="注册"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="290dp"
+        android:layout_height="@dimen/height_button"
+        android:layout_marginEnd="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_rounded_rectangle"
+        android:text="登录"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_nane" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_app_nane"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_app_nane"
+        android:layout_width="133dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+
+        android:layout_marginBottom="32dp"
+        android:text="缤纷旅游"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VicTravel</string>
+    <string name="title_home">Seek</string>
+    <string name="title_dashboard">Message</string>
+    <string name="title_notifications">Me</string>
+    <string name="action_settings">Seethings</string>
+
+    <string name="login_username_hint">please enter your name&#8230;</string>
+    <string name="login_password_hint">please enter your password&#8230;</string>
+    <string name="login_email_hint">请再次输入密码&#8230;</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="register_txt1">no account?</string>
+    <string name="register_txt2">register now></string>
+    <string name="login_account">account</string>
+    <string name="login_pwd">password</string>
+    <string name="login_email">confirm password </string>
+
+    <string name="main_tab_recent">conversation</string>
+    <string name="main_tab_contact">contacts</string>
+    <string name="mian_tab_set">setting</string>
+
+    <string name="add_avator">portrait</string>
+    <string name="add_nick">nickname</string>
+    <string name="add_name">account</string>
+    <string name="agree">accept</string>
+    <string name="new_friend">new friends</string>
+
+    <string name="chat">chat with strangers</string>
+    <string name="add_friend">add friends</string>
+
+    <string name="set_notify">notify</string>
+    <string name="set_myinfo">info</string>
+    <string name="set_blacklist">blacklist</string>
+    <string name="set_voice">voice</string>
+    <string name="set_vibrate">vibrate</string>
+    <string name="logout">logout</string>
+
+    <string name="longclick_speak">long click to speak</string>
+    <string name="picture">picture</string>
+    <string name="camera">camera</string>
+    <string name="location">location</string>
+    <string name="voice_up_tips">finger slippery up,cancel to send</string>
+    <string name="voice_cancel_tips">loosen your finger,cancel to send</string>
+    <string name="voice_seconds_tips">%1$s seconds remains</string>
+    <string name="voice_short_tips">too short</string>
+
+    <string name="no_result">sorry, no results</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="我">me</string>
+    <string name="title_activity_scrolling">scroll activity</string>
+    <string name="bmob_im_notification_have">"there are "</string>
+    <string name="bmob_im_notification_contact">contacts</string>
+    <string name="bmob_im_notification_ticker">new message</string>
+    <string name="bmob_im_notification_send">send</string>
+    <string name="bmob_im_notification_msg">messages</string>
+
+</resources>

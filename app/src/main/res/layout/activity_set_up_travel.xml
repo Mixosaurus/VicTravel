@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".traveltogether.SetUpTravelActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="标题"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/et_departure"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_departure"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="出发地"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/et_destination"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_title" />
+
+            <EditText
+                android:id="@+id/et_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="目的地"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/et_people_number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_departure" />
+
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:text="请选择出发日期"
+                app:layout_constraintBottom_toTopOf="@+id/tv_end_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_people_number" />
+
+
+            <TextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:text="请选择结束日期"
+                app:layout_constraintBottom_toTopOf="@+id/et_remarks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_start_date" />
+
+            <EditText
+                android:id="@+id/et_people_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="84dp"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="人数"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@+id/tv_start_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_destination" />
+
+            <EditText
+                android:id="@+id/et_remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="127dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginLeft="84dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:background="@drawable/et_rim"
+
+                app:layout_constraintBottom_toTopOf="@+id/btn_confirm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_end_date" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="110dp"
+                android:layout_height="@dimen/height_button"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="148dp"
+                android:layout_marginLeft="148dp"
+                android:layout_marginRight="148dp"
+                android:layout_marginStart="148dp"
+                android:text="确认"
+                android:background="@drawable/shape_button"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

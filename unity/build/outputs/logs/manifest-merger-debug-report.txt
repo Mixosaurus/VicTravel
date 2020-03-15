@@ -1,0 +1,127 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:1-20:12
+	package
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:70-97
+		INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+		INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:98-123
+		INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+		INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:124-147
+		INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+		INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+	android:installLocation
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:2:148-188
+supports-screens
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:3:3-163
+	android:largeScreens
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:3:78-105
+	android:smallScreens
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:3:21-48
+	android:normalScreens
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:3:49-77
+	android:xlargeScreens
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:3:106-134
+	android:anyDensity
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:3:135-160
+application
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:4:3-11:17
+	android:banner
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:4:38-75
+	android:isGame
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:4:16-37
+activity#com.wang.vicappar.UnityPlayerActivity
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:5:5-6:16
+	android:screenOrientation
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:5:48-91
+	android:label
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:5:15-47
+	android:launchMode
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:5:92-123
+	android:configChanges
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:5:124-305
+	android:name
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:5:306-358
+meta-data#unity.build-id
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:7:5-101
+	android:value
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:7:46-98
+	android:name
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:7:16-45
+meta-data#unity.splash-mode
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:8:5-69
+	android:value
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:8:49-66
+	android:name
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:8:16-48
+meta-data#unity.splash-enable
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:9:5-74
+	android:value
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:9:51-71
+	android:name
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:9:16-50
+meta-data#android.max_aspect
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:10:5-72
+	android:value
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:10:50-69
+	android:name
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:10:16-49
+uses-permission#android.permission.CAMERA
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:13:3-63
+	android:name
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:13:20-60
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:14:3-79
+	android:name
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:14:20-76
+uses-permission#android.permission.INTERNET
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:15:3-65
+	android:name
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:15:20-62
+uses-feature#0x00020000
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:16:3-52
+	android:glEsVersion
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:16:17-49
+uses-feature#android.hardware.touchscreen
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:17:3-88
+	android:required
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:17:61-85
+	android:name
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:17:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:18:3-99
+	android:required
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:18:72-96
+	android:name
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:18:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:19:3-108
+	android:required
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:19:81-105
+	android:name
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml:19:17-80
+uses-sdk
+INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+		INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+		ADDED from D:\VicTravel\unity\src\main\AndroidManifest.xml
+		INJECTED from D:\VicTravel\unity\src\main\AndroidManifest.xml

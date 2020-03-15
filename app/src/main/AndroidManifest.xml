@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.vic.travel">
+
+    <!-- 振动权限 Permission -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 网络权限 Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 摄像头权限 Permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Normal Permissions 不需要运行时注册 -->
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- 需要运行时注册的权限 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取缓存数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 更改设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- android:theme="@style/AppTheme" -->
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 监听网络的变化 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".network.VicApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="943b88b179fc7bec1bc12b64adf92acf" />
+        <meta-data
+            android:name="Bmob_APP_KEY"
+            android:value="9cca55bb0435602905af0324d269ada7" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!-- 集成：1.5、配置IM SDK需要的广播和服务 -->
+        <receiver android:name="cn.bmob.newim.core.ConnectChangeReceiver">
+            <intent-filter>
+                <action android:name="cn.bmob.action.RECONNECT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <service
+            android:name="cn.bmob.newim.core.service.BmobIMService"
+            android:process=":bmobcore" />
+        <service
+            android:name="cn.bmob.newim.core.service.NotifyService"
+            android:process=":bmobcore" />
+        <service android:name="cn.bmob.newim.core.service.ReConnectService" />
+        <service android:name="cn.bmob.newim.core.service.HeartBeatService" />
+
+        <activity
+            android:name=".homepage.HomePageActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".firstpage.FirstPageActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".register.RegisterActivity" />
+        <activity android:name=".writetip.WriteTipActivity" />
+        <activity
+            android:name=".UnityArActivity"
+            android:process=":unitry3d" />
+        <activity android:name=".showtipdetail.TipDetailActivity" />
+        <activity
+            android:name="com.donkingliang.imageselector.ImageSelectorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.donkingliang.imageselector.PreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.donkingliang.imageselector.ClipImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name=".guide.GuideActivity" />
+        <activity android:name=".chat.ChatActivity" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".traveltogether.TravelInfoActivity" />
+        <activity android:name=".traveltogether.SetUpTravelActivity" />
+        <activity android:name=".usercenter.ResetPasswordActivity" />
+        <activity android:name=".usercenter.UserInfoDetailsActivity" />
+        <activity android:name=".usercenter.AppSettingActivity" />
+
+        <!--android:label="@string/title_activity_travel_info_details"-->
+        <activity
+            android:name=".traveltogether.TravelInfoDetailsActivity"
+
+            android:label="@string/title_activity_travel_info_details"
+
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity android:name=".ImageLoaderTest" >
+
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+
+    </application>
+
+</manifest>

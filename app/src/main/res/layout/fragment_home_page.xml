@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.vic.travel.homepage.HomePageActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_home_page"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetStart="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_travel_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_emassage"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="发现"
+            android:textColor="@color/colorTitle" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <Button
+        android:id="@+id/btn_travel_info"
+        android:layout_width="165dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_test_grident"
+        android:drawableTop="@drawable/home_page_test"
+        android:padding="25dp"
+        android:text="聚场"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_seektip"
+        app:layout_constraintEnd_toStartOf="@+id/btn_setup_travel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_home_page" />
+
+    <Button
+        android:id="@+id/btn_seektip"
+        android:layout_width="165dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/btn_seek_grident"
+        android:clickable="true"
+        android:drawableTop="@drawable/home_page_seek"
+        android:focusable="true"
+        android:padding="40dp"
+        android:text="发现"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_writetip"
+        app:layout_constraintEnd_toStartOf="@+id/btn_story"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_travel_info" />
+
+    <Button
+        android:id="@+id/btn_writetip"
+        android:layout_width="165dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/btn_write_grident"
+        android:drawableTop="@drawable/home_page_write"
+        android:padding="25dp"
+        android:text="撰写"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_story"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_seektip">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_setup_travel"
+        android:layout_width="165dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_weather_grident"
+        android:drawableTop="@drawable/home_page_position"
+        android:padding="20dp"
+        android:text="发起旅行"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_story"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_travel_info"
+        app:layout_constraintTop_toBottomOf="@+id/tb_home_page" />
+
+    <Button
+        android:id="@+id/btn_story"
+        android:layout_width="165dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/btn_story_grident"
+        android:drawableTop="@drawable/home_page_story"
+
+        android:fontFamily="@font/secular_one"
+
+        android:padding="60dp"
+
+
+        android:text="故事"
+
+
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_guide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_writetip"
+        app:layout_constraintTop_toBottomOf="@+id/btn_setup_travel" />
+
+    <Button
+        android:id="@+id/btn_guide"
+        android:layout_width="165dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/btn_guide_grident"
+        android:drawableTop="@drawable/home_page_guide"
+
+
+        android:padding="20dp"
+
+        android:text="向导"
+
+        android:textColor="@color/colorWhite"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_writetip"
+        app:layout_constraintTop_toBottomOf="@+id/btn_story" />
+
+
+
+</android.support.constraint.ConstraintLayout>
